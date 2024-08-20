@@ -44,7 +44,7 @@ afterEvaluate{
             release(MavenPublication){
                 from components.release
 
-                groupId='com.github.agrevida'
+                groupId='com.github.agrevida.library'
                 artifactId = 'utils'
                 version = '1.0.1'
             }
