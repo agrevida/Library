@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
+    id 'java'
 }
 
 android {
@@ -43,11 +44,19 @@ afterEvaluate{
         publications{
             release(MavenPublication){
                 from components.release
-
                 groupId='com.github.agrevida.library'
                 artifactId = 'utils'
-                version = '1.0.1'
+                version = '1.0.0'
             }
         }
+        repositories {
+            mavenLocal()
+        }
+
     }
+
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }

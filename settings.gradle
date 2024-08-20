@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Library"
 include ':app'
 include ':app:utils'
+include ':utilss'
