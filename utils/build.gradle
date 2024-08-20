@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'phyton06.myid.utils'
+    namespace 'com.github.agrevida.utils'
     compileSdk 34
 
     defaultConfig {
