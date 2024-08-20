@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.github.agrevida.utils'
+    namespace 'com.github.agrevida.library.utils'
     compileSdk 34
 
     defaultConfig {
@@ -43,8 +43,8 @@ afterEvaluate{
         publications{
             release(MavenPublication){
                 from components.release
-                groupId='com.github.agrevida.library'
-                artifactId = 'utils'
+                groupId='com.github.agrevida'
+                artifactId = 'library'
                 version = '1.0.0'
             }
         }
